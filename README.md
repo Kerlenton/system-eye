@@ -18,7 +18,7 @@ System-Eye is a CLI utility for monitoring system metrics such as CPU, memory, a
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/system-eye.git
+   git clone https://github.com/Kerlenton/system-eye.git
    cd system-eye
    ```
 2. **Download dependencies:**
