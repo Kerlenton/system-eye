@@ -1,0 +1,2 @@
+refresh_interval: "1s"
+cpu_threshold: 90.0
