@@ -8,6 +8,7 @@ import (
 	"github.com/shirou/gopsutil/mem"
 )
 
+// GetCPUUsage returns the CPU usage percentage over a 1-second interval.
 func GetCPUUsage() (float64, error) {
 	percentages, err := cpu.Percent(time.Second, false)
 	if err != nil {
@@ -19,6 +20,7 @@ func GetCPUUsage() (float64, error) {
 	return percentages[0], nil
 }
 
+// GetMemoryUsage returns the percentage of used memory.
 func GetMemoryUsage() (float64, error) {
 	vmStat, err := mem.VirtualMemory()
 	if err != nil {
@@ -27,6 +29,7 @@ func GetMemoryUsage() (float64, error) {
 	return vmStat.UsedPercent, nil
 }
 
+// GetDiskUsage returns the percentage of disk usage for the specified path.
 func GetDiskUsage(path string) (float64, error) {
 	usageStat, err := disk.Usage(path)
 	if err != nil {
