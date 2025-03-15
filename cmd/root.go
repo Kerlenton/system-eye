@@ -10,7 +10,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "system-eye",
 	Short: "CLI utility for system monitoring",
-	Long:  `A powerful and beautiful CLI tool for monitoring system metrics like CPU, memory, and disk usage.`,
+	Long:  `CLI tool that monitors system metrics (CPU, memory, disk) and displays them as live ASCII graphs.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		cmd.Help()
 	},
