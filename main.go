@@ -1,6 +1,6 @@
 package main
 
-import "system-eye/cmd"
+import "github.com/kerlenton/system-eye/cmd"
 
 func main() {
 	cmd.Execute()

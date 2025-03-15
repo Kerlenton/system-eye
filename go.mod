@@ -1,4 +1,4 @@
-module system-eye
+module github.com/kerlenton/system-eye
 
 go 1.24.1
 
